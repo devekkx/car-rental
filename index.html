@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurum Drive - Premium Car Rental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+      <nav class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-mark">A</span>
+          <span class="logo-text">Aurum Drive</span>
+        </a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="cars.html" class="nav-link">Fleet</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="cars.html" class="nav-cta">Reserve a Car</a></li>
+        </ul>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="hero-eyebrow">Premium Car Rental</p>
+          <h1 class="hero-headline">
+            <span class="hero-line">Drive the car</span>
+            <span class="hero-line hero-line--shimmer">the city deserves.</span>
+          </h1>
+          <p class="hero-subtext">
+            Sedan, SUV, or supercar - reserved in minutes, delivered to your
+            door, returned on your schedule.
+          </p>
+          <div class="hero-actions">
+            <a href="cars.html" class="btn-primary">Browse the Fleet</a>
+            <a href="about.html" class="btn-ghost">How it works</a>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number" data-target="200">0</span>
+            <span class="stat-plus">+</span>
+            <span class="stat-label">Vehicles</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-target="18">0</span>
+            <span class="stat-label">Cities</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-number" data-target="98">0</span>
+            <span class="stat-percent">%</span>
+            <span class="stat-label">Satisfaction</span>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+          <span class="scroll-line"></span>
+          <span class="scroll-text">Scroll</span>
+        </div>
+      </section>
+
+      <section class="section-featured" id="featured">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-eyebrow">Handpicked for you</p>
+            <h2 class="section-title">Featured vehicles</h2>
+            <a href="cars.html" class="section-link"
+              >View full fleet <span class="arrow">→</span></a
+            >
+          </div>
+          <div class="featured-grid" id="featured-grid"></div>
+        </div>
+      </section>
+
+      <section class="section-process">
+        <div class="container">
+          <div class="section-header section-header--centered">
+            <p class="section-eyebrow">Simple from the start</p>
+            <h2 class="section-title">On the road in three steps</h2>
+          </div>
+          <div class="process-grid">
+            <div class="process-step">
+              <div class="process-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <rect
+                    x="4"
+                    y="6"
+                    width="24"
+                    height="20"
+                    rx="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path d="M4 12h24" stroke="currentColor" stroke-width="1.5" />
+                  <path
+                    d="M10 4v4M22 4v4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <rect
+                    x="9"
+                    y="17"
+                    width="4"
+                    height="4"
+                    rx="0.5"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <h3 class="process-title">Pick your dates</h3>
+              <p class="process-desc">
+                Choose pickup and return dates. Select your city or request
+                delivery to an address.
+              </p>
+            </div>
+            <div class="process-connector" aria-hidden="true"></div>
+            <div class="process-step">
+              <div class="process-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M5 22l4-12h14l4 12H5z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M3 22h26"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="10"
+                    cy="25"
+                    r="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <circle
+                    cx="22"
+                    cy="25"
+                    r="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M14 10h4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="process-title">Choose your car</h3>
+              <p class="process-desc">
+                Filter by type, budget, or fuel. Compare specs side by side and
+                reserve instantly.
+              </p>
+            </div>
+            <div class="process-connector" aria-hidden="true"></div>
+            <div class="process-step">
+              <div class="process-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                  <path
+                    d="M16 4l2.5 8h8l-6.5 4.7 2.5 7.8L16 20l-6.5 4.5 2.5-7.8L5.5 12h8L16 4z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h3 class="process-title">Drive away</h3>
+              <p class="process-desc">
+                Collect your keys - at our lot or at your door. Full insurance
+                included. No hidden fees.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-categories">
+        <div class="container">
+          <div class="section-header section-header--centered">
+            <p class="section-eyebrow">Every kind of drive</p>
+            <h2 class="section-title">Browse by category</h2>
+          </div>
+          <div class="categories-grid">
+            <a href="cars.html?type=sedan" class="category-card">
+              <div class="category-visual category-visual--sedan"></div>
+              <div class="category-info">
+                <h3 class="category-name">Sedan</h3>
+                <p class="category-count">14 vehicles</p>
+              </div>
+            </a>
+            <a href="cars.html?type=suv" class="category-card">
+              <div class="category-visual category-visual--suv"></div>
+              <div class="category-info">
+                <h3 class="category-name">SUV</h3>
+                <p class="category-count">22 vehicles</p>
+              </div>
+            </a>
+            <a href="cars.html?type=luxury" class="category-card">
+              <div class="category-visual category-visual--luxury"></div>
+              <div class="category-info">
+                <h3 class="category-name">Luxury</h3>
+                <p class="category-count">18 vehicles</p>
+              </div>
+            </a>
+            <a href="cars.html?type=sports" class="category-card">
+              <div class="category-visual category-visual--sports"></div>
+              <div class="category-info">
+                <h3 class="category-name">Sports</h3>
+                <p class="category-count">9 vehicles</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-testimonials">
+        <div class="container">
+          <div class="section-header section-header--centered">
+            <p class="section-eyebrow">From our guests</p>
+            <h2 class="section-title">What they said</h2>
+          </div>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span>
+              </div>
+              <blockquote class="testimonial-quote">
+                "Reserved a BMW 5 Series for a week. The car was immaculate and
+                the whole process took under ten minutes online."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">MT</div>
+                <div class="author-info">
+                  <span class="author-name">Marcus T.</span>
+                  <span class="author-role">Business traveler, London</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card testimonial-card--featured">
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span>
+              </div>
+              <blockquote class="testimonial-quote">
+                "Drove a Porsche 911 for our anniversary weekend. The car, the
+                service, the delivery to our hotel - all flawless."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">SA</div>
+                <div class="author-info">
+                  <span class="author-name">Sofia & Andre</span>
+                  <span class="author-role">Anniversary trip, Barcelona</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span>
+              </div>
+              <blockquote class="testimonial-quote">
+                "Rented a Range Rover for a family ski trip. Spacious, clean,
+                and the team sorted the roof rack at no extra charge."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">JW</div>
+                <div class="author-info">
+                  <span class="author-name">James W.</span>
+                  <span class="author-role">Family trip, Geneva</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <div class="container">
+          <div class="cta-inner">
+            <p class="section-eyebrow">Ready to drive?</p>
+            <h2 class="cta-headline">Your next journey<br />starts here.</h2>
+            <p class="cta-subtext">
+              No membership fees. No surprises. Just the right car at the right
+              time.
+            </p>
+            <a href="cars.html" class="btn-primary btn-large"
+              >Reserve your car</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="nav-logo">
+              <span class="logo-mark">A</span>
+              <span class="logo-text">Aurum Drive</span>
+            </a>
+            <p class="footer-tagline">Premium vehicles. Zero compromise.</p>
+          </div>
+          <div class="footer-nav">
+            <h4 class="footer-nav-title">Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cars.html">Fleet</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h4 class="footer-nav-title">Vehicle types</h4>
+            <ul>
+              <li><a href="cars.html?type=sedan">Sedan</a></li>
+              <li><a href="cars.html?type=suv">SUV</a></li>
+              <li><a href="cars.html?type=luxury">Luxury</a></li>
+              <li><a href="cars.html?type=sports">Sports</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <h4 class="footer-nav-title">Company</h4>
+            <ul>
+              <li><a href="about.html">Our story</a></li>
+              <li><a href="contact.html">Get in touch</a></li>
+              <li><a href="#">Terms of rental</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copy">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Aurum Drive. All rights reserved.
+          </p>
+
+          <p class="footer-legal">
+            Insurance included on all rentals. Valid driving licence required.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
