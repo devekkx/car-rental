@@ -390,37 +390,6 @@ textarea {
   overflow: hidden;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: -20%;
-  right: -10%;
-  width: 60%;
-  height: 80%;
-  background: radial-gradient(
-    ellipse at center,
-    rgba(242, 197, 92, 0.06) 0%,
-    transparent 65%
-  );
-  pointer-events: none;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    var(--border) 30%,
-    var(--border) 70%,
-    transparent 100%
-  );
-}
-
 .hero-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -564,33 +533,6 @@ textarea {
   height: 48px;
   background: var(--border);
   flex-shrink: 0;
-}
-
-.hero-scroll-indicator {
-  position: absolute;
-  bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
-
-.scroll-line {
-  display: block;
-  width: 1px;
-  height: 40px;
-  background: linear-gradient(to bottom, var(--border), transparent);
-}
-
-.scroll-text {
-  font-family: var(--font-data);
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--ghost);
-  writing-mode: vertical-rl;
 }
 
 .section-eyebrow {
